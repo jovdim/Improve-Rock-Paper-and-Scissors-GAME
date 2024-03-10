@@ -1,1 +1,1 @@
-# Improve-Rock-Paper-and-Scissors-GAME
+# Improved-Rock-Paper-and-Scissors-GAME
