@@ -1,0 +1,33 @@
+body {
+  background-color: rgb(25, 25, 25);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.title {
+  font-size: 30px;
+  font-weight: bold;
+}
+.button-css {
+  border: 3px solid white;
+  margin: 0 6px;
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 26px;
+  cursor: pointer;
+}
+
+.rps-image {
+  width: 48px;
+  height: 48px;
+}
+.css-result {
+  font-size: 20px;
+  font-weight: bold;
+}
+.reset-button,
+ .auto-play-button {
+  padding: 8px 14px;
+  border: none;
+  cursor: pointer;
+}
+

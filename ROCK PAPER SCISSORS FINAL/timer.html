@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button
+      onclick="
+      myFunction('sixti')"
+      class="sixti"
+    >
+      60
+    </button>
+    <button
+      onclick="
+    myFunction('seventy')"
+      class="seventy"
+    >
+      70
+    </button>
+    <button
+      onclick="
+    myFunction('wanhandred')"
+      class="wanhandred"
+    >
+      100
+    </button>
+    <p class="timer"></p>
+    <script>
+      let time60 = 61;
+      let time70 = 70;
+      let time100 = 100;
+      let intervalId ;
+      let condition = false;
+
+      const sixtiElem = document.querySelector(".sixti");
+      const seventyElem = document.querySelector(".seventy");
+      const wanhandredElem = document.querySelector(".wanhandred");
+      let allAround = document.querySelector(".timer");
+      function myFunction(choice) {
+        if (choice === "sixti") {
+        if (!condition){
+          condition = false;
+          intervalId =  setInterval(() => {
+            time60 -= 1;
+            allAround.innerHTML = time60;
+            clearInterval(intervalId);
+          }, 1000);
+        }else{
+          clearInterval(intervalId);
+
+        }
+        } else if (choice === "seventy") {
+         intervalId = setInterval(() => {
+            time70 = time70 - 1
+            allAround.innerHTML =time70;
+            clearInterval(intervalId);
+            
+          }, 1000);
+        } else if (choice === "wanhandred") {
+         intervalId = setInterval(() => {
+            time100 = time100 - 1
+            allAround.innerHTML = time100;
+            clearInterval(intervalId);
+          }, 1000);
+        }cd
+      }
+    </script>
+  </body>
+</html>
